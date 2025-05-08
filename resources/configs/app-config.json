@@ -1,0 +1,12 @@
+{
+  "defaults": {
+    "timeout": 30,
+    "environment": "dev"
+  },
+  "notifications": {
+    "slack": {
+      "channel": "#builds",
+      "enabled": true
+    }
+  }
+}
