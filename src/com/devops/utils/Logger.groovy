@@ -1,7 +1,8 @@
 package com.devops.utils
 
 class Logger {
-    static void info(String message) {
-        echo "[INFO] ${new Date()}: ${message}"
+    // Add script parameter to access pipeline steps
+    static void info(def script, String message) {
+        script.echo "[INFO] ${new Date()}: ${message}"
     }
 }
